@@ -5,11 +5,8 @@ import (
     "fmt"
     "os"
 	"strconv"
-	// "encoding/csv"
 	"encoding/json"
-	// "errors"
 	"flag"
-	// "io"
 	"path/filepath"
 	"strings"
 )
@@ -34,7 +31,6 @@ func getArguments() inputArguments{
 	capacity := getCapacity(reader)
 	num_items:= getNumItems(reader)
 	item_info:= getItemInfo(reader, num_items)
-	fmt.Print(item_info)
 	info := inputArguments{capacity, item_info}
 	return info
 }
